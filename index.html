@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI资讯日报</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🤖 AI资讯日报</h1>
+            <p class="subtitle">每日收集AI、科技、创业领域最新资讯</p>
+            <nav>
+                <a href="index.html" class="active">首页</a>
+                <a href="about.html">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索资讯...">
+            </div>
+            <div class="tags" id="tagFilters">
+                <button class="tag active" data-tag="all">全部</button>
+                <button class="tag" data-tag="量子位">量子位</button>
+                <button class="tag" data-tag="机器之心">机器之心</button>
+                <button class="tag" data-tag="虎嗅">虎嗅</button>
+                <button class="tag" data-tag="极客公园">极客公园</button>
+                <button class="tag" data-tag="InfoQ">InfoQ</button>
+                <button class="tag" data-tag="36氪">36氪</button>
+                <button class="tag" data-tag="晚点">晚点</button>
+            </div>
+        </div>
+
+        <div class="news-list" id="newsList">
+            <!-- News items will be loaded here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AI资讯日报 | 由 Claude Code 构建</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
